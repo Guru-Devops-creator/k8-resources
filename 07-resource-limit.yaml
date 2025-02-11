@@ -2,6 +2,10 @@ kind: Pod
 apiVersion: v1
 metadata:
    name: resource-limit
+   labels: 
+        project: expense
+        environment: dev
+        module: backend
 spec:
   containers:
     - name: nginx
@@ -13,9 +17,5 @@ spec:
         limits:
           cpu: 120m
           memory: 100Mi
-name: labels
-     labels: 
-        project: expense
-        environment: dev
-        module: backend
+     
   
