@@ -1,8 +1,7 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
   name: config-map
 data:
  course: devops
  duration: 120hrs
- 
