@@ -17,6 +17,19 @@ spec:
   #        - matchExpressions:
   #          - key: topology.kubernetes.io/zone
   #            operator: In
-
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata: 
+  name: eds-static
+spec:
+  storageClassName: ""
+  volumeName: ebs-static
+  accessModes: 
+   - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+      
                
       
